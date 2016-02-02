@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/css/layout.css"/>
+    <script src="/static/js/app.js"></script>
+</head>
+<body>
+
+<select id="select-route" title="Route" onchange="app.selectRoute(this.value)">
+</select>
+
+<select id="select-pattern" title="Pattern" onchange="app.selectPattern(this.value)">
+</select>
+
+
+<div id="map"></div>
+
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=INSERT_GOOGLE_API_KEY_HERE&callback=app.init">
+</script>
+</body>
+</html>
